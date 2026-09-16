@@ -38,7 +38,7 @@ main {
   flex: 1;
   display: flex;
   flex-flow: column;
-  width: 95vw;
+  width: 90vw;
   align-self: center;
   padding-bottom: 2rem;
 }

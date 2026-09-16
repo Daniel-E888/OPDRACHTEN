@@ -28,7 +28,7 @@ nav {
     background-color: $red;
     display: flex;
     place-content: center;
-    
+
     ul {
         display: flex;
         list-style-type: none;
@@ -45,7 +45,7 @@ main {
     flex: 1;
     display: flex;
     flex-flow: column;
-    width: 95vw;
+    width: 90vw;
     align-self: center;
     padding-bottom: 2rem;
 }
