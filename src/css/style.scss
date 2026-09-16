@@ -6,7 +6,7 @@ $red: #FF0000;
 $font-size: 14px;
 
 body {
-    width: 80vw;
+    width: 100vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ body {
 }
 
 .header_bg {
-    width: 80vw;
+    width: 100vw;
     max-height: 15vh;
 }
 
@@ -43,6 +43,8 @@ main {
     flex: 1;
     display: flex;
     flex-flow: column;
+    width: 95vw;
+    align-self: center;
 }
 
 footer {
