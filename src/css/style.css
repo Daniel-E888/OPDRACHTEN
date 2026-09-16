@@ -44,4 +44,11 @@ footer {
   background-color: #FF0000;
   color: #FFF;
   text-align: center;
+}
+
+button {
+  background-color: #FF0000;
+  color: #FFF;
+  border-style: none;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
