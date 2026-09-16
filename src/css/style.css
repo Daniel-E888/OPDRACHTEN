@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 body {
   width: 80vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -22,6 +23,11 @@ nav ul {
 nav a {
   color: #FFF;
   text-decoration: none;
+}
+
+main {
+  flex: 1;
+  display: flex;
 }
 
 footer {
