@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 body {
   width: 80vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -10,6 +10,11 @@ body {
   font-style: normal;
   line-height: 1;
   font-size: 14px;
+}
+
+.header_bg {
+  width: 80vw;
+  max-height: 15vh;
 }
 
 nav {
