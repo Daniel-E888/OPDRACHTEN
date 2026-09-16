@@ -27,6 +27,7 @@ body {
 nav {
     background-color: $red;
     display: flex;
+    place-content: center;
     
     ul {
         display: flex;

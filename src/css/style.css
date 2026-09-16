@@ -21,6 +21,7 @@ body {
 nav {
   background-color: #FF0000;
   display: flex;
+  place-content: center;
 }
 nav ul {
   display: flex;
