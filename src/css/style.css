@@ -15,6 +15,7 @@ body {
 .header_bg {
   width: 100vw;
   max-height: 15vh;
+  display: block;
 }
 
 nav {
