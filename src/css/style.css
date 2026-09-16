@@ -27,7 +27,8 @@ nav ul {
   list-style-type: none;
   gap: 1rem;
 }
-nav a {
+
+a {
   color: #FFF;
   text-decoration: none;
 }
@@ -43,9 +44,8 @@ main {
 article {
   display: flex;
   flex-flow: column;
-  border-style: solid;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 footer {
@@ -54,14 +54,10 @@ footer {
   text-align: center;
 }
 
-button {
+.nav-button {
   background-color: #FF0000;
-  color: #FFF;
   border-style: none;
   padding: 10px;
-}
-button:hover {
-  cursor: pointer;
 }
 
 .project-image {
