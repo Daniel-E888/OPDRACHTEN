@@ -3,6 +3,7 @@
 $white: #FFF;
 $black: #000;
 $red: #FF0000;
+$font-size: 14px;
 
 body {
     width: 80vw;
@@ -14,6 +15,7 @@ body {
     font-weight: normal;
     font-style: normal;
     line-height: 1;
+    font-size: $font-size;
 }
 
 nav {
@@ -35,6 +37,7 @@ nav {
 main {
     flex: 1;
     display: flex;
+    flex-flow: column;
 }
 
 footer {
