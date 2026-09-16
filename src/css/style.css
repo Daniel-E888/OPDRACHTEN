@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+}
+
+nav {
+  background-color: #FF0000;
+  display: flex;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+nav a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #FF0000;
+  color: #FFF;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
