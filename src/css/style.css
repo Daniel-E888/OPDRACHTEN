@@ -19,7 +19,7 @@ body {
 }
 
 nav {
-  background-color: #FF0000;
+  background-color: #CC2000;
   display: flex;
   place-content: center;
 }
@@ -56,14 +56,14 @@ article {
 }
 
 footer {
-  background-color: #FF0000;
+  background-color: #CC2000;
   color: #FFF;
   text-align: center;
 }
 
 .button {
   display: inline-block;
-  background-color: #FF0000;
+  background-color: #CC2000;
   border-style: none;
   padding: 10px;
 }
