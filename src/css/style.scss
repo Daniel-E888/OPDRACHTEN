@@ -46,6 +46,12 @@ main {
     flex-flow: column;
     width: 95vw;
     align-self: center;
+    padding-bottom: 2rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
 }
 
 article {
@@ -62,6 +68,7 @@ footer {
 }
 
 .button {
+    display: inline-block;
     background-color: $red;
     border-style: none;
     padding: 10px;
