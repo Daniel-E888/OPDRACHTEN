@@ -54,13 +54,13 @@ footer {
   text-align: center;
 }
 
-.nav-button {
+.button {
   background-color: #FF0000;
   border-style: none;
   padding: 10px;
 }
 
-.project-image {
-  max-width: 180px;
-  max-height: 120px;
+.content-image {
+  max-width: 120px;
+  max-height: 90px;
 }/*# sourceMappingURL=style.css.map */
