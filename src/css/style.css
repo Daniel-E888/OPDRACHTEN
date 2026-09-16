@@ -40,6 +40,14 @@ main {
   align-self: center;
 }
 
+article {
+  display: flex;
+  flex-flow: column;
+  border-style: solid;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
 footer {
   background-color: #FF0000;
   color: #FFF;
@@ -51,4 +59,12 @@ button {
   color: #FFF;
   border-style: none;
   padding: 10px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.project-image {
+  max-width: 180px;
+  max-height: 120px;
 }/*# sourceMappingURL=style.css.map */
