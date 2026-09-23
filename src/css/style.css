@@ -84,7 +84,7 @@ input {
 }
 
 .success-message {
-  color: green;
+  color: #008000;
   margin-bottom: 10px;
 }
 
