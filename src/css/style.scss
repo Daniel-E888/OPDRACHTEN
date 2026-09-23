@@ -86,9 +86,11 @@ footer {
     text-align: center;
 }
 
-.button {
+.button, button {
     display: inline-block;
     background-color: $red;
+    color: $white;
+    cursor: pointer;
     border-style: none;
     padding: 10px;
 }
