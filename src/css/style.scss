@@ -99,6 +99,7 @@ input {
 textarea {
     font-size: $font-size;
     height: 120px;
+    resize: vertical;
 }
 
 footer {
