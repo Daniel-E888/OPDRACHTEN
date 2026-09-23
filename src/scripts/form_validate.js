@@ -5,7 +5,6 @@ const messageInput = document.getElementById("message");
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const minMessageLength = 10;
-let isFormValid = false;
 
 function isValidName(name) {
   return name.trim() !== "";
@@ -19,15 +18,14 @@ function isValidMessage(message) {
   return message.trim().length >= minMessageLength;
 }
 
-function validateInput(inputs) {
-    return {
-            isValidName: isValidName(inputs.name),
-            isValidEmail: isValidEmail(inputs.email),
-            isValidMessage: isValidMessage(inputs.message)
-    }
+function validateForm(inputs) {
+  return {
+    isValidName: isValidName(inputs.name),
+    isValidEmail: isValidEmail(inputs.email),
+    isValidMessage: isValidMessage(inputs.message),
+  };
 }
 
-// if the input is invalid, set the error message and add the error class to the form control
 function setError(input, message) {
   const formControl = input.parentElement;
   const errorMessage = formControl.querySelector(".error-message");
@@ -36,7 +34,6 @@ function setError(input, message) {
   input.setAttribute("aria-invalid", "true");
 }
 
-// if the input is valid, clear the error message and remove the error class from the form control
 function clearError(input) {
   const formControl = input.parentElement;
   const errorMessage = formControl.querySelector(".error-message");
@@ -45,9 +42,23 @@ function clearError(input) {
   input.setAttribute("aria-invalid", "false");
 }
 
+function validateField(input, isValid, errorMessage) {
+  if (!isValid) {
+    setError(input, errorMessage);
+    return false;
+  }
+  clearError(input);
+  return true;
+}
+
+function clearSuccess() {
+  const successMessage = form.querySelector(".success-message");
+  successMessage.textContent = "";
+}
+
 function setSuccess() {
-    const successMessage = form.querySelector(".success-message");
-    successMessage.textContent = "Formulier is succesvol ingediend!";
+  const successMessage = form.querySelector(".success-message");
+  successMessage.textContent = "Formulier is succesvol ingediend!";
 }
 
 function handleFormSubmit(e) {
@@ -61,26 +72,18 @@ function handleFormSubmit(e) {
 
   const validation = validateForm(formInputValues);
 
-  if (!validation.isValidName) {
-    setError(nameInput, "Naam is verplicht.");
-  } else {
-    clearError(nameInput);
-  }
+  const validName = validateField(nameInput, validation.isValidName, "Naam is verplicht.");
+  const validEmail = validateField(emailInput, validation.isValidEmail, "Voer een geldig e-mailadres in.");
+  const validMessage = validateField(
+    messageInput,
+    validation.isValidMessage,
+    `Bericht moet minimaal ${minMessageLength} tekens lang zijn.`
+  );
 
-  if (!validation.isValidEmail) {
-    setError(emailInput, "Voer een geldig e-mailadres in.");
-  } else {
-    clearError(emailInput);
-  }
-
-  if (!validation.isValidMessage) {
-    setError(messageInput, `Bericht moet minimaal ${minMessageLength} tekens lang zijn.`);
-  } else {
-    clearError(messageInput);
-  }
-
-  if (validation.isValidName && validation.isValidEmail && validation.isValidMessage) {
+  if (validName && validEmail && validMessage) {
     setSuccess();
+  } else {
+    clearSuccess();
   }
 }
 
