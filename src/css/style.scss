@@ -6,6 +6,10 @@ $red: #CC2000;
 $green: #008000;
 $font-size: 18px;
 
+html {
+  overflow-y: scroll;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
