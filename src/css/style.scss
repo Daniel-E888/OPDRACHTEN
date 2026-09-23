@@ -3,6 +3,7 @@
 $white: #FFF;
 $black: #000;
 $red: #CC2000;
+$green: #008000;
 $font-size: 18px;
 
 body {
@@ -66,13 +67,27 @@ form {
     display: flex;
     flex-direction: column;
     align-self: center;
-    width: 30vw;
     gap: 1rem;
+}
+
+.form-group {
+    width: 30vw;
 }
 
 input {
     height: 30px;
     font-size: $font-size;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: $red;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: green;
+    margin-bottom: 10px;
 }
 
 textarea {

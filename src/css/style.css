@@ -59,13 +59,27 @@ form {
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 30vw;
   gap: 1rem;
+}
+
+.form-group {
+  width: 30vw;
 }
 
 input {
   height: 30px;
   font-size: 18px;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: #CC2000;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: green;
+  margin-bottom: 10px;
 }
 
 textarea {
