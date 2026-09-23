@@ -60,6 +60,7 @@ form {
   display: flex;
   flex-direction: column;
   align-self: center;
+  min-width: 356px;
 }
 
 .form-group {

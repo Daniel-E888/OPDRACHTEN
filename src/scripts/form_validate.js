@@ -33,17 +33,17 @@ function validateForm(inputs) {
     successMessage.textContent = "Formulier is succesvol ingediend!";
   } else {
     if (inputs.name.trim() === "") {
-      setError(nameInput, "Naam is verplicht");
+      setError(nameInput, "Naam is verplicht.");
     } else {
         clearError(nameInput);
     }
     if (!emailRegex.test(inputs.email)) {
-      setError(emailInput, "Voer een geldig e-mailadres in");
+      setError(emailInput, "Voer een geldig e-mailadres in.");
     } else {
         clearError(emailInput);
     }
     if (inputs.message.trim().length < minMessageLength) {
-      setError(messageInput, `Bericht moet minimaal ${minMessageLength} tekens lang zijn`);
+      setError(messageInput, `Bericht moet minimaal ${minMessageLength} tekens lang zijn.`);
     } else {
         clearError(messageInput);
     }
