@@ -17,14 +17,6 @@ form.addEventListener("submit", function (e) {
   };
 
   validateForm(formInputValues);
-
-  if (isFormValid) {
-    console.log(
-      `Form submitted: ${formInputValues.name} ${formInputValues.email} ${formInputValues.message}`,
-    );
-  } else {
-
-  }
 });
 
 function validateForm(inputs) {
