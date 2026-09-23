@@ -55,6 +55,24 @@ article {
   gap: 0.5rem;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 30vw;
+  gap: 1rem;
+}
+
+input {
+  height: 30px;
+  font-size: 18px;
+}
+
+textarea {
+  font-size: 18px;
+  height: 120px;
+}
+
 footer {
   background-color: #CC2000;
   color: #FFF;

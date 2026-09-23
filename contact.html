@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>21104727 - form</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="header_bg" src="assets/images/header_bg.jpg" alt="" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Index</a></li>
+          <li><a href="projects.html">Projecten</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Formulier</h1>
+        <form method="post">
+          <label for="name">Naam:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Bericht:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Verzenden</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Gemaakt door Daniël Eekhout (21104727)</p>
+    </footer>
+  </body>
+</html>
