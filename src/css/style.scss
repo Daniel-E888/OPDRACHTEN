@@ -43,6 +43,10 @@ a {
         text-decoration: none;
     }
 
+.project-context {
+    font-weight: bold;
+}
+
 main {
     flex: 1;
     display: flex;
@@ -105,6 +109,7 @@ footer {
 .button, button {
     display: inline-block;
     background-color: $red;
+    font-size: $font-size;
     color: $white;
     cursor: pointer;
     border-style: none;
