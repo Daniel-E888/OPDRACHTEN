@@ -113,4 +113,8 @@ footer {
 .content-image {
   max-width: 120px;
   max-height: 90px;
+}
+
+.form-header {
+  align-self: center;
 }/*# sourceMappingURL=style.css.map */
